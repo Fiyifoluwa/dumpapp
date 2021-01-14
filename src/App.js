@@ -8,7 +8,14 @@ import "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
-firebase.initializeApp({});
+firebase.initializeApp({
+  apiKey: "AIzaSyDRgdBZAoTY6ulB7Sg6jzksQ5E-hDw-eug",
+  authDomain: "dumpapp-2b8f3.firebaseapp.com",
+  projectId: "dumpapp-2b8f3",
+  storageBucket: "dumpapp-2b8f3.appspot.com",
+  messagingSenderId: "610438599610",
+  appId: "1:610438599610:web:625901bcb712a8e8730383",
+});
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
