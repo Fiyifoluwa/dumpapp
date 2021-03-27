@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 import firebase from "firebase/app";
@@ -41,7 +41,11 @@ function SignIn() {
     auth.signInWithPopup(provider);
   };
 
-  return <button onClick={signInWithGoogle}>Sign in with Google</button>;
+  return (
+    <div>
+      <button onClick={signInWithGoogle}>Sign in with Google</button>;
+    </div>
+  );
 }
 
 function SignOut() {
