@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 
 import firebase from "firebase/app";
@@ -43,7 +43,7 @@ function SignIn() {
 
   return (
     <div>
-      <button onClick={signInWithGoogle}>Sign in with Google</button>;
+      <button onClick={signInWithGoogle}>Sign in with Google</button>
     </div>
   );
 }
